@@ -2,17 +2,17 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000; /* Black background */
-    color: #fff; /* White text */
+    background-color: #000; 
+    color: #fff; 
 }
 
 .container {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #333; /* Dark gray container background */
+    background-color: #333; 
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Darker shadow */
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); 
 }
 
 h1, h2 {
@@ -21,8 +21,8 @@ h1, h2 {
 }
 
 nav {
-    background-color: #111; /* Darker navigation bar */
-    color: #fff; /* White text */
+    background-color: #111; 
+    color: #fff;
     padding: 10px 20px;
 }
 

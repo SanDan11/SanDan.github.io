@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const numStars = 200; // Adjust the number of stars as needed
     const starsContainer = document.getElementById('stars');
 
-    // Function to generate a random number within a range
+    
     function randomInRange(min, max) {
         return Math.random() * (max - min) + min;
     }
@@ -11,13 +11,13 @@ document.addEventListener("DOMContentLoaded", function() {
     function createStar() {
         const star = document.createElement('div');
         star.className = 'star';
-        const x = randomInRange(0, window.innerWidth); // Random horizontal position
-        const y = randomInRange(0, window.innerHeight); // Random vertical position
+        const x = randomInRange(0, window.innerWidth); 
+        const y = randomInRange(0, window.innerHeight); 
         star.style.left = x + 'px';
         star.style.top = y + 'px';
         starsContainer.appendChild(star);
-        // Randomly adjust the animation delay for each star
-        star.style.animationDelay = randomInRange(0, 5) + 's'; // Adjust the range of delay as needed
+        
+        star.style.animationDelay = randomInRange(0, 5) + 's'; 
     }
 
     // Create stars
@@ -25,3 +25,17 @@ document.addEventListener("DOMContentLoaded", function() {
         createStar();
     }
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    var links = document.querySelectorAll("#navbar a");
+    links.forEach(function(link) {
+        link.addEventListener("mouseover", function() {
+            this.style.color = "rgba(0, 0, 0, 0.5)";
+        });
+        link.addEventListener("mouseout", function() {
+            this.style.color = "black";
+        });
+    });
+});
+
