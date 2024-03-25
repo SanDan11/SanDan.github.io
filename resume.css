@@ -17,6 +17,7 @@ body {
 
 h1, h2 {
     color: #fff; /* White text */
+    font-family: "Times New Roman", Times, serif;
 }
 
 nav {
